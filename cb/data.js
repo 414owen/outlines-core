@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734826249949,
+  "lastUpdate": 1734827683582,
   "repoUrl": "https://github.com/414owen/outlines-core",
   "entries": {
     "Benchmark": [
@@ -89,6 +89,36 @@ window.BENCHMARK_DATA = {
             "name": "fib 20",
             "value": 1835,
             "range": "± 34",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owen@owen.cafe",
+            "name": "Owen Shepherd",
+            "username": "414owen"
+          },
+          "committer": {
+            "email": "owen@owen.cafe",
+            "name": "Owen Shepherd",
+            "username": "414owen"
+          },
+          "distinct": true,
+          "id": "882ef62704046c850156d8bb59631a39f58c11c6",
+          "message": "Enable debug logs in workflow",
+          "timestamp": "2024-12-22T00:32:38Z",
+          "tree_id": "5d4629281ffa702722c62669686cb1dcc3019aa9",
+          "url": "https://github.com/414owen/outlines-core/commit/882ef62704046c850156d8bb59631a39f58c11c6"
+        },
+        "date": 1734827682346,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 20",
+            "value": 1834,
+            "range": "± 10",
             "unit": "ns/iter"
           }
         ]
