@@ -53,7 +53,6 @@ jobs:
 
       - name: Compare benchmark results
         uses: benchmark-action/github-action-benchmark@v1
-        if: github.event_name == 'push'
         with:
           tool: 'cargo'
           output-file-path: benchmarks.txt
