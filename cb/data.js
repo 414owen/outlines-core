@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734830315507,
+  "lastUpdate": 1734833813530,
   "repoUrl": "https://github.com/414owen/outlines-core",
   "entries": {
     "Benchmark": [
@@ -299,6 +299,36 @@ window.BENCHMARK_DATA = {
             "name": "fib 20",
             "value": 1833,
             "range": "± 21",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "414owen@gmail.com",
+            "name": "Owen Shepherd",
+            "username": "414owen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b64a91088feb53fc9095f4258d40053dd0d1a4ce",
+          "message": "Merge pull request #3 from 414owen/os/ci-benchmarks-regression-test\n\nUpdate iters to cause a regression",
+          "timestamp": "2024-12-22T02:14:30Z",
+          "tree_id": "972667051b17a71cb67bedad98ab9059c1773d6c",
+          "url": "https://github.com/414owen/outlines-core/commit/b64a91088feb53fc9095f4258d40053dd0d1a4ce"
+        },
+        "date": 1734833812376,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 20",
+            "value": 4816,
+            "range": "± 192",
             "unit": "ns/iter"
           }
         ]
