@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734830044551,
+  "lastUpdate": 1734830183873,
   "repoUrl": "https://github.com/414owen/outlines-core",
   "entries": {
     "Benchmark": [
@@ -239,6 +239,36 @@ window.BENCHMARK_DATA = {
             "name": "fib 20",
             "value": 1834,
             "range": "± 21",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owen@owen.cafe",
+            "name": "Owen Shepherd",
+            "username": "414owen"
+          },
+          "committer": {
+            "email": "owen@owen.cafe",
+            "name": "Owen Shepherd",
+            "username": "414owen"
+          },
+          "distinct": true,
+          "id": "af93ab0ca2a774868e68517f67c9a937b9f8cbf1",
+          "message": "Remove a check from comment option in workflow",
+          "timestamp": "2024-12-22T01:14:30Z",
+          "tree_id": "443ddec22b3ab8d360e0e15f3c53f728fef18b5f",
+          "url": "https://github.com/414owen/outlines-core/commit/af93ab0ca2a774868e68517f67c9a937b9f8cbf1"
+        },
+        "date": 1734830183428,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 20",
+            "value": 1834,
+            "range": "± 10",
             "unit": "ns/iter"
           }
         ]
