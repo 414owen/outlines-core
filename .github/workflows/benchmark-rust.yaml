@@ -55,13 +55,13 @@ jobs:
           echo $GITHUB_SHA > ./cache/last-sha
 
       - name: Compare benchmark results
-        uses: benchmark-action/github-action-benchmark@v1
+        uses: 414owen/github-action-benchmark@1b9e62e8a94bfa23b892188399eac71a99c50162
         with:
           tool: 'cargo'
           output-file-path: benchmarks.txt
           alert-threshold: "110%"
           fail-on-alert: ${{ github.event_name == 'pull_request' }}
-          comment-on-alert: ${{ github.event_name == 'push' && github.event.pull_request.head.repo.fork == false }}
+          comment-on-alert: ${{ github.event.pull_request.head.repo.fork == false }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           summary-always: true
           benchmark-data-dir-path: cb
