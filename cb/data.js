@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734830183873,
+  "lastUpdate": 1734830315507,
   "repoUrl": "https://github.com/414owen/outlines-core",
   "entries": {
     "Benchmark": [
@@ -269,6 +269,36 @@ window.BENCHMARK_DATA = {
             "name": "fib 20",
             "value": 1834,
             "range": "± 10",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owen@owen.cafe",
+            "name": "Owen Shepherd",
+            "username": "414owen"
+          },
+          "committer": {
+            "email": "owen@owen.cafe",
+            "name": "Owen Shepherd",
+            "username": "414owen"
+          },
+          "distinct": true,
+          "id": "af42ec9623a458fced0c99f9df75244f52f2f651",
+          "message": "Remove some workflow steps",
+          "timestamp": "2024-12-22T01:16:26Z",
+          "tree_id": "cf393c88c005bef678638719f817cce0747da237",
+          "url": "https://github.com/414owen/outlines-core/commit/af42ec9623a458fced0c99f9df75244f52f2f651"
+        },
+        "date": 1734830315084,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 20",
+            "value": 1833,
+            "range": "± 21",
             "unit": "ns/iter"
           }
         ]
