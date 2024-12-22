@@ -22,8 +22,11 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
+  # deployments permission to deploy GitHub pages website
   deployments: write
+  # contents permission to update benchmark contents in gh-pages branch
   contents: write
+  # allow posting comments to pull request
   pull-requests: write
 
 jobs:
@@ -58,7 +61,7 @@ jobs:
           output-file-path: benchmarks.txt
           alert-threshold: "110%"
           fail-on-alert: ${{ github.event_name == 'pull_request' }}
-          comment-on-alert: ${{ github.event.pull_request.head.repo.fork == false }}
+          comment-on-alert: ${{ github.event_name == 'push' && github.event.pull_request.head.repo.fork == false }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           summary-always: true
           benchmark-data-dir-path: cb
