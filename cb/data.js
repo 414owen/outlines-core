@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734825604220,
+  "lastUpdate": 1734825853165,
   "repoUrl": "https://github.com/414owen/outlines-core",
   "entries": {
     "Benchmark": [
@@ -29,6 +29,36 @@ window.BENCHMARK_DATA = {
             "name": "fib 20",
             "value": 1833,
             "range": "± 7",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owen@owen.cafe",
+            "name": "Owen Shepherd",
+            "username": "414owen"
+          },
+          "committer": {
+            "email": "owen@owen.cafe",
+            "name": "Owen Shepherd",
+            "username": "414owen"
+          },
+          "distinct": true,
+          "id": "622870204eb6f0219cb99f7eeca1ef9beb4d8edb",
+          "message": "Add previous SHA to cache",
+          "timestamp": "2024-12-22T00:02:10Z",
+          "tree_id": "73b640980cde02c140e577e91306589ddc27819b",
+          "url": "https://github.com/414owen/outlines-core/commit/622870204eb6f0219cb99f7eeca1ef9beb4d8edb"
+        },
+        "date": 1734825852541,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 20",
+            "value": 1835,
+            "range": "± 36",
             "unit": "ns/iter"
           }
         ]
