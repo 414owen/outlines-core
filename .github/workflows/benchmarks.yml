@@ -2,6 +2,7 @@ name: Benchmarks
 
 on:
   push:
+    branches: [main]
   pull_request:
     types: [synchronize, labeled]
   workflow_dispatch:
@@ -67,13 +68,13 @@ jobs:
         run: cargo criterion --bench criterion --output-format bencher|& tee benchmarks.txt
 
       - name: Compare benchmarks
-        uses: 414owen/github-action-benchmark@745dc3ce0a9a35124ab058c1259f1970fd945fd3
+        uses: 414owen/github-action-benchmark@3b926dfc87ee208354c6b5dcf5a49d5e11234143
         with:
           tool: 'cargo'
           output-file-path: benchmarks.txt
           alert-threshold: "110%"
           fail-on-alert: ${{ github.event_name == 'pull_request' }}
-          comment-on-alert: ${{ github.event.pull_request.head.repo.fork == false }}
+          comment-on-alert: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
           summary-always: true
           auto-push: ${{ github.event_name == 'push' }}
