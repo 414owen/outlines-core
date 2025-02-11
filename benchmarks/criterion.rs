@@ -2,16 +2,11 @@ use criterion::{criterion_group, criterion_main, Criterion};
 use std::hint::black_box;
 
 fn fibonacci(n: u64) -> u64 {
-    let mut a = 0;
-    let mut b = 1;
-
-    for _ in 0..n {
-        let tmp = b;
-        b += a;
-        a = tmp;
+    if n < 3 {
+        n
+    } else {
+        fibonacci(n - 1) + fibonacci(n - 2) + fibonacci(n - 3)
     }
-
-    a
 }
 
 fn criterion_benchmark(c: &mut Criterion) {
